@@ -3,6 +3,20 @@
 #include <vector>
 using namespace std;
 
+/*
+To add variable, declare it in main(){}
+
+Then create void function setQ(int i, bool&q) {
+    if (i % maximum rows possible (2 ^ (variables amount)) AND (&&) i % same number != 0) {
+        q = true;
+    } else {
+        q = false;
+    }
+}
+
+And don't forget to increase i condition to number+1; 32+1, 64+1 etc
+*/
+
 void setV(int i, bool& v) {
     if (i % 32 <= 16 && i % 32 != 0) {
         v = true;
